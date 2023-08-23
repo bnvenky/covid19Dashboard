@@ -19,4 +19,5 @@ const SearchRecommendation = props => {
     </Link>
   )
 }
+
 export default SearchRecommendation

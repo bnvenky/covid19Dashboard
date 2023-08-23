@@ -360,7 +360,7 @@ class Home extends Component {
         </div>
         {showSearchSuggestions && (
           <ul
-            testid="searchResultsUnorderedList"
+            data-testid="searchResultsUnorderedList"
             className="search-recommendation-list"
           >
             {updatedFilteredStates.map(eachState => (
@@ -398,7 +398,7 @@ class Home extends Component {
 
               <div
                 className="state-wise-records"
-                testid="stateWiseCovidDataTable"
+                data-testid="stateWiseCovidDataTable"
               >
                 <div className="state-wise-total-table-record">
                   <div className="total-record">
@@ -408,7 +408,7 @@ class Home extends Component {
                         <button
                           type="button"
                           className="sort-icon"
-                          testid="ascendingSort"
+                          data-testid="ascendingSort"
                           onClick={this.sortAscending}
                         >
                           <FcGenericSortingAsc />
@@ -416,7 +416,7 @@ class Home extends Component {
                         <button
                           type="button"
                           className="sort-icon"
-                          testid="descendingSort"
+                          data-testid="descendingSort"
                           onClick={this.sortDescending}
                         >
                           <FcGenericSortingDesc />
@@ -474,7 +474,7 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="homeRouteLoader" className="covid-loader-container">
+    <div data-testid="homeRouteLoader" className="covid-loader-container">
       <Loader type="Oval" color="#0b69ff" height="50" width="50" />
     </div>
   )
